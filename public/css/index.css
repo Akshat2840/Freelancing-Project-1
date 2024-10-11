@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+
+
+body,html{
+    /* height: -50%; */
+    /* width: 100%;
+    height: 100%; */
+    /* overflow-x: hidden; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7vw;
+    /* border: 2px solid black; */
+    display: flex;
+    z-index: 3;
+    font-family: "Krona One", sans-serif;
+    transition: 500ms;
+}
+
+.bar{
+    display: none;
+}
+
+.nav_phone{
+    display: none;
+}
+
+.nav_bg{
+    background-color: #fff;
+    box-shadow: 0px 0px 2vw black;
+}
+
+.logo{
+    position: absolute;
+    height: 130%;
+    width: 11%;
+    left: 0;
+    top: -16%;
+}
+
+.nav_bar{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 49%;
+    /* border: 2px solid red; */
+    right: 2%;
+}
+
+.nav_bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.6vw;
+}
+
+
+
+.top{
+    position: relative;
+    /* height: 100%; */
+    /* top: 10%; */
+    left: 0;
+    /* overflow: hidden; */
+    /* float: top; */
+    /* width: 100vw; */
+    width: 100%;
+    /* border: 2px solid red; */
+    background-position: cover;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+#home_top{
+    width: 100%;
+    background-position: cover;
+    height: auto;
+    display: block;
+    /* position: relative; */
+    /* top: -10%; */
+}
+
+.welcome{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 2.6vw;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Cinzel";
+
+}
+
+.uttarakhand{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 6.7vw;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Georgia;
+    font-weight: 100;
+    margin-top: 3%;
+}
+
+.tour{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 2.4vw;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+}
+
+.cha{
+    /* border: 2px solid black; */
+    overflow: hidden;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.char{
+    /* position: relative;
+    top: -10.5vw; */
+    font-size: 4.5vw;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 800;
+    font-family: "Assistant";
+    margin-top: 0;
+    margin-bottom: 0;
+    /* margin-block-start: 0em; */
+}
+
+.home_para{
+    /* position: relative;
+    top: -10.5vw; */
+    font-size: 1.8vw;
+    font-family: "Arima";
+    font-weight: 650;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.four_img{
+    /* position: relative;
+    top: -10.5vw; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* row-gap: 2%; */
+    height: 65vw;
+    width: 90%;
+    
+}
+
+.cards{
+    position: relative;
+    height: 85%;
+    width: 80%;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0px 0.9vw 2.7vw black;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+
+    
+}
+
+#yamunotri{
+    margin-top: 9%;
+    margin-left: 15%;
+    
+    
+}
+
+#gangotri{
+    margin-top: 9%;
+    margin-left: 12%;
+    
+}
+
+#kedarnath{
+    margin-top: 12%;
+    margin-left: 15%;
+    
+}
+
+#badrinath{
+    margin-top: 12%;
+    margin-left: 12%;
+    
+}
+
+.temples{
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 10%;
+    transition: 400ms ease-in-out;
+    
+
+}
+
+.temples:hover{
+    /* color: black; */
+    scale: 1.13;
+    cursor: pointer;
+}
+
+.flip{
+    position: absolute;
+    /* margin-top: 100%; */
+    top: 100%;
+}
+
+.temple_names{ 
+    position: absolute;
+    /* top: 85%;    */
+    bottom: 0;
+    left: 50%;
+    /* top: 50%; */
+    transform: translate(-50% );
+
+    color: white;
+    font-family: "Assistant";
+    font-weight: 700;
+    font-size: 3.3vw;
+
+    width: 100%;
+    /* border: 2px solid red; */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    transition: 1500ms;
+}
+
+.special{
+    /* position: relative;
+    top: -10.5vw; */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Arima", system-ui;
+    font-size: 4.5vw;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.slider{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 30vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1%;
+    overflow:hidden; 
+    scroll-behavior: smooth;
+    
+  
+
+}
+
+
+
+.slider_card{
+    position: relative;
+    width: 98%;
+    height: 95%;
+    display: flex;
+    /* background-color: #b3b3b3; */
+    scroll-snap-align: start;
+    /* z-index: -1; */
+    /* border: 2px solid black; */
+    
+    
+}
+
+.slider_image{
+    height: 90%;
+    width: 45%;
+    margin-top: 1%;
+    margin-left: 6%;
+    /* border: 2px solid red; */
+
+}
+
+.slider_image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 4vw;
+}
+
+.slider_image_info{
+    height: 90%;
+    width: 50%;
+
+    margin-top: 1%;
+    margin-left: 5%;
+    /* border: 2px solid red; */
+}
+
+.slider_heading{
+    font-family: "Assistant";
+    font-weight: 700;
+    font-size: 2.7vw;
+    margin-top: 8%;
+}
+
+.slider_para{
+    font-family: "Alegreya Sans";
+    font-weight: 500;
+    font-size: 1.7vw;
+    margin-top: 10%;
+}
+
+.trend{
+    /* position: relative;
+    top: -10.5vw; */
+    font-family: "Assistant";
+    font-size: 4.3vw;
+    font-weight: 700;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.three_img{
+    /* position: relative;
+    top: -10.5vw; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    height: 45vw;
+    width: 100%;
+    
+}
+
+.trend_cards{
+    position: relative;
+    height: 73%;
+    width: 27%;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.trend_cards img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.trend_info{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 40%;
+    width: 85%;
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+    background-color: rgb(236, 236, 236);
+    opacity: 0.9;
+    transition: height 200ms ease-in-out;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.trend_info h2{
+    color: rgb(55, 0, 255);
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.3vw;
+    margin-left: 65%;
+    
+    transition: 200ms;
+}
+
+.trend_info_expand{
+    height:calc(80%);
+
+}
+
+.trend_info h2:hover{
+    cursor: pointer;
+    font-size: 1.4vw;
+    margin-left: 64%;
+}
+
+.trend_name{
+
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.3vw;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 0;
+
+}
+
+.trend_details{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.4vw;
+    font-weight: 510;
+    margin-left: 6%;
+    margin-right: 9%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.extra{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 510;
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: justify;
+
+}
+
+.rent{
+    position: relative;
+    /* top: -10.5vw; */
+    border: 5px solid rgb(255, 255, 255); 
+    overflow: hidden; 
+    width: 94%;
+    margin-left: 3%;
+    height: 44vw;
+    
+}
+
+.rent_bg{
+    width: 100%;
+    height: 44vw;
+    background-image: url("/Images/home/rent_bg.jpg");
+    background-size: cover;
+    filter: blur(0.2vw);
+    -webkit-filter: blur(0.2vw);
+    /* z-index: 0; */
+    
+}
+
+
+
+.cover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 44vw;
+    background-color: rgb(159, 159, 159);
+    opacity: 0.4;
+}
+
+.rent_heading{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    
+    margin-top: 5%;
+    font-family: "Assistant";
+    font-size: 3.8vw;
+    font-weight: 700;
+    
+}
+
+.rent_3_img{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.rent_3_img a{
+    text-decoration: none;
+}
+
+.p_down{
+    color: black;
+}
+
+.rental_divs{
+    height: 100%;
+    width: 30%;
+    margin-left: 2.3%;
+    
+    
+}
+
+#bus{
+    z-index: 2;
+}
+
+#car{
+    z-index: 2;
+}
+
+#helicopter{
+    z-index: 2;
+}
+
+
+
+.rental_divs img{
+    margin-top: 10%;
+    margin-left: 2.5%;
+    height: 60%;
+    width: 95%;
+
+    border-radius: 2vw;
+}
+
+.rental_divs p{
+    font-family: "Georgia";
+    font-size: 2.3vw;
+    font-weight: 600;
+    text-align: center;
+    margin-block-start: 1%;
+}
+
+.btn{
+    /* position: relative;
+    top: -10.5vw; */
+    height: 20vw;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    font-family: "Assistant";
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: #9f4112;
+    border-radius: 5vw;
+    border: none;
+    height: 37%;
+    width: 30%;
+    box-shadow: 0.4vw 0.4vw 1.6vw black;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+footer{
+    /* position: relative;
+    top: -10.5vw; */
+    width: 100%;
+    height: 35vw;
+    
+    background: linear-gradient(290deg , #9f4112 , #ff6112);
+}
+
+footer p{
+    color: white;
+    font-family: "Georgia";
+    font-weight: 100;
+    font-size: 3.5vw;
+    margin-left: 3%;
+    margin-block-end: 0;
+    padding-top: 4%;
+}
+
+.contact_3{
+    
+    width: 100%;
+    height: 60%;
+    
+    
+    display: flex;
+    overflow: hidden;
+}
+
+.rects{
+    width: 26%;
+    height: 68%;
+    margin-top: 6%;
+    margin-left: 5%;
+    
+    border: 0.3vw solid white;
+}
+
+.icons{
+    width: 99%;
+    height: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rects button{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    height: 40px;
+    width: 40px;
+    /* border: 2px solid red; */
+
+}
+
+.rects button i{
+    font-size: 3.5vw;
+}
+
+.head{
+    font-family: "Assistant";
+    font-size: 2vw;
+    font-weight: 500;
+    margin-left: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .nav{
+        height: 12vw;
+        /* border: 2px solid red; */
+        /* display: flex; */
+        justify-content: space-between;
+        /* background: white; */
+    }
+
+    .nav img{
+        top: -23%;
+        height: 140%;
+        width: 18%;
+        /* order: 1; */
+        /* border: 2px solid red; */
+    }
+
+    .nav_bar{
+        display: none;
+    }
+    
+    .bar{
+        display: inline-block;
+        position: absolute;
+        right: 4%;
+        top: 25%;
+        /* border: 2px solid red; */
+        border: none;
+        font-size: 7vw;
+        line-height: 1vw;
+        /* order: 2; */
+        background: rgba(0, 0, 0, 0);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .nav_phone{
+        /* display: block; */
+        position: fixed;
+        inset: 0px;
+        height: 69vw;
+        background-color: white;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .brand{
+        position: relative;
+        height: 12vw;
+        display: flex;
+        /* padding-bottom: 10%; */
+        
+        /* border: 2px solid red; */
+        border-bottom: 2px solid rgb(224, 224, 224);
+    }
+
+    .brand img{
+        position: absolute;
+        top: -23%;
+        height: 140%;
+        width: 18%;
+        /* margin-bottom: 200px; */
+        /* border: 2px solid black; */
+    }
+
+    .cross{
+        display: inline-block;
+        position: absolute;
+        right: 4%;
+        top: 25%;
+        border: none;
+        font-size: 7vw;
+        line-height: 1vw;
+        background: rgba(0, 0, 0, 0);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .tags{
+        height: 55vw;
+        /* border: 2px solid red; */
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 7%;
+        /* border-bottom: 2px solid rgb(224, 224, 224); */
+    }
+
+    .tags a{
+        margin-left: 3%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .tags i{
+        font-size: 4vw;
+    }
+
+    .char{
+        margin-top: 4%;
+        font-size: 8vw;    
+    }
+
+    .home_para{
+        margin-top: 5%;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+
+    .four_img{
+        margin-top: 10%;
+        height: 250vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #yamunotri{
+        margin-top: 0;
+        margin-left: 10%;   
+    }
+    
+    #gangotri{
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    
+    #kedarnath{
+        margin-top: 0;
+        margin-left: 10%; 
+    }
+    
+    #badrinath{
+        margin-top: 0;
+        margin-left: 10%;
+    }
+
+    .temple_names{
+        height: 20%;
+        
+        /* border: 2px solid red; */
+        font-size: 7vw;
+        letter-spacing: 1px;
+        text-align: bottom;
+    }
+
+    .special{
+        margin-top: 0;
+        font-size: 5vw;
+    }
+    
+    .slider{
+        height: 80vw;
+    }
+
+    .slider_card{
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+    }
+    
+    .slider_image{
+        height: 50%;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    .slider_image_info{
+        /* border: 2px solid red; */
+        height: 30%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
+    .slider_heading{
+        font-size: 4.5vw;
+        text-align: center;
+        margin-block-start: 3%;
+        margin-block-end: 3%;
+    }
+    
+    .slider_para{
+        font-size: 3vw;
+        font-weight: 600;
+        text-align: justify;
+        margin-block-start: 0;
+    }
+
+    .trend{
+        margin-top: 0;
+        font-size: 7vw;
+        margin-bottom: 8%;
+    }
+
+    .three_img{
+        margin-bottom: 7%;
+    }
+
+    .trend_cards{
+        height: 39vw;
+        width: 29%;
+    }
+
+    .trend_name{
+        font-weight: 800;
+        font-size: 3vw;
+    }
+
+    .trend_details{
+        font-size: 2vw;
+    }
+
+    .rent_3_img a{
+        text-decoration: none;
+    }
+
+    .rent_heading{
+        font-size: 6vw;
+        /* border: 2px solid red; */
+        left: 12%;
+    }
+
+    .p_down{
+        color: white;
+        /* text-decoration: none; */
+    }
+
+    .btn button{
+        width: 50%;
+        height: 50%;
+        font-size: 5vw;
+    }
+
+    footer{
+        height: 150vw;
+    }
+
+    footer p{
+        font-size: 6vw;
+        margin-left: 5%;
+        /* margin-top: 15%; */
+        padding-top: 5%;
+    }
+
+    .contact_3{
+        /* border: 2px solid red; */
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+
+    }
+
+    .rects{
+        width: 80%;
+        height: 150%;
+        margin-left: 0;
+        margin-top: 7%;
+        border: 2px solid white;
+    }
+
+    .icons{
+        width: 99%;
+        height: 50%;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .rects button{
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        color: white;
+        height: 40px;
+        width: 40px;
+        /* border: 2px solid red; */
+
+    }
+    
+    .rects button i{
+        font-size: 10vw;
+    }
+
+
+    .head{
+        font-size: 5vw;
+    }
+}
+
+
+
+
+
+/* @media (min-width: 601px) and (max-width: 700px) {
+
+    .char{
+        font-size: 6vb;
+    }
+
+    .home_para{
+        font-size: 2.4vb;
+    }
+
+    .temple_names{
+        font-size: 3.2vb;
+    }
+
+    .special{
+        font-size: 3.8vb;
+    }
+}
+
+
+
+
+
+@media (min-width: 701px) and (max-width: 1200px) {
+
+    .char{
+        font-size: 7vb;
+    }
+
+    .home_para{
+        font-size: 2.9vb;
+    }
+
+    .temple_names{
+        font-size: 4.3vb;
+    }
+
+    .special{
+        font-size: 5vb;
+    }
+}  */
+ 
+
+

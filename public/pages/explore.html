@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../css/explore.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <img class="logo" src="/Images/logo.png" alt="">
+
+        <div class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="/book">Book Now</a>
+            <a href="/contact">Contact</a>
+            <a href="/about">About</a> 
+        </div>
+
+        <button class="bar" onclick="menu_bar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav_phone">
+
+            <div class="brand">
+                <img src="/Images/logo.png" alt="">
+
+                <button class="cross" onclick="menu_bar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="tags">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hotel"></i>
+                    <a href="/book">Book Now</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-address-card"></i>
+                    <a href="/about">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="explore_top">
+        <img src="/Images/explore/explore_top.jpg" alt="">
+        <div class="container">
+            <p class="uttarakhand"><i>Uttarakhand</i></p>
+            <p class="heaven"><i>Heaven on Earth</i></p>
+        </div>
+    </div>
+
+    <div class="bot">
+
+        <div class="rev">
+            <p class="reveal">reveal uttarakhand</p>
+        </div>
+
+        <div class="reveal_items">
+
+            <div class="items" id="0" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/bell.jpg" alt="">
+
+                <div class="back_img hidden" id="bell" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Known as Devbhumi, or the land of Gods, this state occupies a significant place on the nation's
+                        religious map.
+                    </p>
+                </div>
+
+                <div class="blur" id="bell_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">With Divine Blessing</p>
+                    <p class="img_info">Home of Divinity</p>
+                </div>
+            </div>
+
+            <div class="items" id="1" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/zipline.jpg" alt="">
+
+                <div class="back_img hidden" id="zipline" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        From camping, skiing, and river rafting to stargazing, trekking, and bungee jumping, Uttarakhand
+                        is a paradise for adventure enthusiasts.
+                    </p>
+                </div>
+
+                <div class="blur" id="zipline_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Savor the Adventure</p>
+                    <p class="img_info">Uncover New Thrills</p>
+                </div>
+            </div>
+
+            <div class="items" id="2" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/trees.jpg" alt="">
+
+                <div class="back_img hidden" id="trees" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Nestled in nature, far from the city's noise and pollution, Uttarakhand offers a refreshing
+                        escape and a soothing sight for tired eyes.
+                    </p>
+                </div>
+
+                <div class="blur" id="trees_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Nature’s Generous Gift</p>
+                    <p class="img_info">Enjoy Nature’s Serenity</p>
+                </div>
+            </div>
+
+            <div class="items" id="3" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/deer.jpg" alt="">
+
+                <div class="back_img hidden" id="deer" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Uttarakhand is home to conservation reserves, national parks, and World Heritage sites, rich
+                        with diverse flora and fauna.
+                    </p>
+                </div>
+
+                <div class="blur" id="deer_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Into the Wild</p>
+                    <p class="img_info">Trek through Forest</p>
+                </div>
+            </div>
+
+            <div class="items" id="4" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/yoga.jpg" alt="">
+
+                <div class="back_img hidden" id="yoga" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Uttarakhand is home to welcoming people whose unique cultures and traditions are rarely found
+                        elsewhere.
+                    </p>
+                </div>
+
+                <div class="blur" id="yoga_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Reestablish the Roots</p>
+                    <p class="img_info">The birthplace of Yoga</p>
+                </div>
+            </div>
+
+            <div class="items" id="5" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/ancient_temple.jpg" alt="">
+
+                <div class="back_img hidden" id="ancient" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Uttarakhand’s history and sacred sites are referenced not only in textbooks but also in India’s
+                        ancient scriptures.
+                    </p>
+                </div>
+
+                <div class="blur" id="ancient_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Old-time Artifact</p>
+                    <p class="img_info">Stories from the past</p>
+                </div>
+            </div>
+
+            <div class="items" id="6" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/food.jpg" alt="">
+
+                <div class="back_img hidden" id="food" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Uttarakhand's cuisine combines wholesome ingredients with flavorful spices, offering a perfect
+                        blend of taste and nutrition.
+                    </p>
+                </div>
+
+                <div class="blur" id="food_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Regional Cuisines</p>
+                    <p class="img_info">Savor Heritage Dishes</p>
+                </div>
+            </div>
+
+            <div class="items" id="7" onmouseover="hide(this)" onmouseout="show(this)">
+                <img src="/Images/explore/ganga.jpg" alt="">
+
+                <div class="back_img hidden" id="ganga" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p>
+                        Uttarakhand is home to warm, welcoming people with unique cultures and traditions rarely found
+                        elsewhere.
+                    </p>
+                </div>
+
+                <div class="blur" id="ganga_2" onmouseover="filter_on(this)" onmouseout="filter_off(this)">
+                    <p class="img_heading">Thoughts and Rituals</p>
+                    <p class="img_info">Local Cultural Activities</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="adv">
+            <p class="adventure">adventure sports</p>
+        </div>
+
+        <div class="sports">
+            <div class="card">
+                <img src="/Images/explore/rafting.jpeg" alt="" class="up_img">
+                <div class="card_content up">
+                    <h2>River Rafting in Uttarakhand</h2>
+                    <p class="para">Embark on an unforgettable river rafting journey in Uttarakhand’s gushing rivers. With thrilling rapids and scenic views, Rishikesh offers the ultimate rafting adventure. Suitable for both beginners and seasoned adventurers, it's an exhilarating way to explore nature!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_content down">
+                    <h2>Bungee Jumping in Uttarakhand</h2>
+                    <p class="para">Experience the thrill of bungee jumping in the breathtaking landscapes of Uttarakhand. Leap from towering heights into the scenic surroundings of Rishikesh, the adventure capital of India. Perfect for adrenaline seekers, this adventure promises a once-in-a-lifetime experience!</p>
+                </div>
+                <img src="/Images/explore/bungee.jpg" alt="" class="down_img">
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/explore.js"></script>
+</body>
+
+</html>
